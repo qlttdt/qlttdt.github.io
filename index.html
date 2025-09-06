@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>THIẾT KẾ WEBSITE ĐỒNG THÁP</title>
+
+
+
+      <link href="CSS/trangchinh.css" rel="stylesheet" />
+      <link href="CSS/forminfo.css" rel="stylesheet" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  
+  
+      <style>
+	     
+          .section-title h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+    color: #0cc39f;
+    letter-spacing: 0.3px;
+    padding: 0;
+}
+.section-title::after {
+    content: "";
+    height: 3px;
+    background: #0cc39f;
+    width: 80px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/****************/
+/*	 BX-SLIDER 	*/
+/****************/
+section.client {
+	padding:4em 0em;
+	background-color: white;
+
+}
+section.client .section-title {
+	margin-bottom: 6em;
+}
+.bx-controls {
+	position: relative;
+	 display: none;
+}
+.bx-wrapper .bx-pager {
+    text-align: center;
+    padding-top: 30px;
+}
+.bx-wrapper .bx-pager .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #666;
+    text-indent: -9999px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+	   
+      </style>
+
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></script>
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.js"></script>
+      <script>
+        $(document).ready(function () {
+
+            var counters = $(".count");
+            var countersQuantity = counters.length;
+            var counter = [];
+
+            for (i = 0; i < countersQuantity; i++) {
+                counter[i] = parseInt(counters[i].innerHTML);
+            }
+
+            var count = function (start, value, id) {
+                var localStart = start;
+                setInterval(function () {
+                    if (localStart < value) {
+                        localStart++;
+                        counters[id].innerHTML = localStart;
+                    }
+                }, 40);
+            }
+
+            for (j = 0; j < countersQuantity; j++) {
+                count(0, counter[j], j);
+            }
+        });
+      </script>
+
+
+
+      <link rel="icon" href="HinhPhu/logo.png" type="image/x-icon" />
+      <link rel="shortcut icon" href="HinhPhu/logo.png" type="image/x-icon" />
+  </head>
+  <body >
+
+      <div class="header">
+          <div class="sides">
+              <a href="https://www.facebook.com/Thi%E1%BA%BFt-K%E1%BA%BF-Web-ST-111456693674897/?modal=admin_todo_tour" class="logo"><img src="HinhPhu/facebook.png" /></a>
+              <a href="/" class="logo"><img src="HinhPhu/twitter.png" /></a>
+              <a href="/" class="logo"><img src="HinhPhu/youtube.png" /></a>
+
+          </div>
+          <div class="sides"> <a href="#" class="menu"> </a></div>
+          <div class="info">
+
+              <div class="meta">
+                  <a href="/" class="author"></a><br>
+		         <h2> Chào mừng bạn đến đây!</h2>
+                  <h1>Mình là Trọng, mình đang sống và làm việc ở Đồng Tháp.</h1>
+               
+                  <h3>Mình chuyên thiết kế Web theo yêu cầu.</h3>
+
+              </div>
+
+
+          </div>
+      </div>
+      <div id="Num" style="display:none">
+          <div class="row">
+              <ul class="flex-container">
+                  <li class="flex-item"><img src="HinhPhu/project.png" /><div class="count">33</div> Dự án </li>
+                  <li class="flex-item"><img src="HinhPhu/experience.png" /><div class="count">4</div> Kinh nghiệm </li>
+                  <li class="flex-item"><img src="HinhPhu/user.png" /> <div class="count">33</div> Người dùng tin tưởng  </li>
+
+              </ul>
+          </div>
+      </div>
+      <div>
+          <section class="client">
+              <div class="container">
+                  <div class="row">
+
+                      <div class="section-title">
+                          <h2>KHÁCH HÀNG</h2>
+                      </div>
+
+                      <div class="carousel-client">
+                          <div class="slide"><img src="HinhPhu/dt1.png" height="100"></div>
+                          <div class="slide"><img src="HinhPhu/dt2.png" height="100"></div>
+                          <div class="slide"><img src="HinhPhu/dt3.png" height="100"></div>
+                          <div class="slide"><img src="HinhPhu/dt4.png" height="100"></div>
+                          <div class="slide"><img src="HinhPhu/dt5.png" height="100"></div>
+                          <div class="slide"><img src="HinhPhu/dt6.png" height="75" style="width:222px"></div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+      </div>
+      <section class="content">
+          <div class="form">
+             
+              <p>Mình có 5 năm kinh nghiệm về thiết kế Web.</p>
+              <p>Mình luôn muốn tạo ra sản phẩm chất lượng tốt cho khách hàng.</p>
+              <p>Bạn có thể trao đổi trực tiếp với mình về dự án nhằm đưa ra hướng giải quyết tốt nhất cho bạn thông qua hộp thông tin bên dưới, phần mềm họp trực tuyến,...</p>
+
+              <ul id="Thongtin">
+                  <li>
+                      <span class="title">Email:</span>
+                      <span class="value">thietkewebst@gmail.com</span>
+                  </li>
+                  <li>
+                      <span class="title">Quốc gia:</span>
+                      <span class="value">Việt Nam</span>
+                  </li>
+                  <li>
+                      <span class="title">Mục tiêu làm việc:</span>
+                      <span class="value">Có tâm - Có hiệu quả</span>
+                  </li>
+                  <li>
+                      <span class="title">Số điện thoại:</span>
+                      <span class="value">090.102.7278</span>
+                  </li>
+              </ul>
+</div>
+</section>
+      <!-- Messenger Plugin chat Code -->
+      <div id="fb-root"></div>
+      <!-- Your Plugin chat code -->
+      <div id="fb-customer-chat" class="fb-customerchat">
+      </div>
+      <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "111456693674897");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v12.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+      </script>
+      <script>
+          /**********************/
+          /*	Client carousel   */
+          /**********************/
+          $('.carousel-client').bxSlider({
+              auto: true,
+              slideWidth: 234,
+              minSlides: 2,
+              maxSlides: 5,
+              controls: false
+          });
+      </script>
+<script id="kami-chat-widget" src="https://kamimind.ai/kami-chat-widget.js" token="tHIcsF2J9ABCmuZofKrUqXSCZ1hr507C" charset="utf-8" botToken="0faa7b49-bda7-467f-95b3-2b43139b911a" bottomOffset="0px" bubbleSize="50" autoChatPopup="false" chatPopupDelay="5" tooltipText="KamiMind Agent" tooltipBgColor="#222" tooltipFontSize="14px" width="400" height="600" opacityBackground="100"	defer
+></script>
+  </body>
+</html>
+
+
+
+
+
